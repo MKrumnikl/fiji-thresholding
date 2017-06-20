@@ -7,23 +7,7 @@ package com.it4i.imagej;
  *     http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-import net.imagej.Dataset;
-import net.imagej.DatasetService;
-import net.imagej.ImageJ;
-import net.imagej.ops.OpService;
-import net.imglib2.Cursor;
-import net.imglib2.Dimensions;
-import net.imglib2.RandomAccess;
-import net.imglib2.RandomAccessibleInterval;
-import net.imglib2.img.Img;
-import net.imglib2.img.ImgFactory;
-import net.imglib2.img.array.ArrayImgFactory;
-import net.imglib2.type.NativeType;
-import net.imglib2.type.Type;
-import net.imglib2.type.numeric.RealType;
-import net.imglib2.type.numeric.integer.IntType;
-import net.imglib2.type.numeric.real.DoubleType;
-import net.imglib2.type.numeric.real.FloatType;
+import java.io.File;
 
 import org.scijava.ItemIO;
 import org.scijava.command.Command;
@@ -34,9 +18,13 @@ import org.scijava.plugin.Plugin;
 import org.scijava.ui.UIService;
 import org.scijava.widget.NumberWidget;
 
-import jnr.ffi.Struct.uid_t;
-
-import java.io.File;
+import net.imagej.Dataset;
+import net.imagej.DatasetService;
+import net.imagej.ImageJ;
+import net.imagej.ops.OpService;
+import net.imglib2.Cursor;
+import net.imglib2.RandomAccess;
+import net.imglib2.type.numeric.RealType;
 
 /**
  * This example illustrates how to create an ImageJ {@link Command} plugin.
